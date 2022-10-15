@@ -1,18 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-      './src/**/*.tsx'
-    ],
+    content: ['./src/**/*.tsx'],
     theme: {
+        variants: {
+            textColor: ['responsive', 'hover', 'focus', 'focus-within']
+        },
         fontSize: {
             xs: 14,
             sm: 16,
             md: 18,
             lg: 24,
-            '2xl': 32,
+            '2xl': 32
         },
 
         colors: {
+            transparent: 'transparent',
+
             black: '#000',
             white: '#FFF',
 
@@ -21,19 +24,19 @@ module.exports = {
                 800: '#202024',
                 400: '#7C7C8A',
                 200: '#C4C4C4',
-                100: '#E1E1E6',
+                100: '#E1E1E6'
             },
 
             red: {
                 900: '#F33535',
-                500: '#F56767',
+                500: '#F56767'
             }
         },
         extend: {
             fontFamily: {
                 sans: 'Inter, sans-serif'
-            },
-        },
+            }
+        }
     },
     plugins: []
 }
