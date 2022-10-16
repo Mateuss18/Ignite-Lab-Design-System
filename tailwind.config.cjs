@@ -29,7 +29,7 @@ module.exports = {
 
             red: {
                 900: '#F33535',
-                500: '#F56767'
+                500: '#EB4E4E'
             }
         },
         extend: {
