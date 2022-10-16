@@ -9,20 +9,19 @@ import { Button } from './components/Button';
 
 export function App() {
   return (
-    <div className='w-screen h-screen bg-gray-900 flex flex-col items-center justify-center text-gray-100'>
+    <div className='w-screen h-screen bg-gray-900 flex flex-col items-center justify-center text-gray-100 sm:p-2'>
       <header className='flex flex-col items-center'>
-        <Logo />
+        <Logo className='sm:h-20 lg:h-28 h-30' />
         
-        <Heading size="lg" className='mt-4'>
+        <Heading size="lg" className='mt-4 sm:mt-1 sm:text-lg lg:mt-2 '>
           O.F.O.s
         </Heading>
-
-        <Text size="lg" className='text-gray-400 mt-1'>
+        <Text size="lg" className='text-gray-400 mt-1 sm:text-md sm:mt-0'>
           Eles estão por toda parte..
         </Text>
       </header>
 
-      <form className="flex flex-col gap-4 items-stretch w-full max-w-sm mt-10">
+      <form className="flex flex-col gap-4 items-stretch w-full max-w-sm mt-10 sm:mt-4 lg:mt-7">
         <label htmlFor="email" className='flex flex-col gap-3'>
           <Text className='font-semibold'>Endereço de e-mail</Text>
           <TextInput.Root>
@@ -50,12 +49,12 @@ export function App() {
           <Text size="sm" className='text-gray-200'>Lembrar de mim por 30 dias</Text>
         </label>
 
-        <Button type="submit" className="mt-4">
+        <Button type="submit" className="mt-4 lg:mt-2">
           Entrar na comunidade
         </Button>
       </form>
 
-      <footer className='flex flex-col items-center gap-4 mt-8'>
+      <footer className='flex flex-col items-center gap-4 mt-8 lg:mt-6'>
         <Text asChild size='sm'>
           <a href="" className="text-gray-400 underline hover:text-gray-200">Esqueceu sua senha?</a>
         </Text>
