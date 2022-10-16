@@ -33,14 +33,14 @@ export function App() {
           </TextInput.Root>
         </label>
 
-          <label htmlFor="email" className='flex flex-col gap-3'>
+          <label htmlFor="password" className='flex flex-col gap-3'>
             <Text className='font-semibold'>Sua senha</Text>
             <TextInput.Root>
               <TextInput.Icon>
                 <Lock />
               </TextInput.Icon>
 
-              <TextInput.Input type="email" id="email" placeholder='*********' />
+              <TextInput.Input type="password" id="email" placeholder='*********' />
             </TextInput.Root>
         </label>
 
@@ -59,7 +59,7 @@ export function App() {
           <a href="" className="text-gray-400 underline hover:text-gray-200">Esqueceu sua senha?</a>
         </Text>
         <Text asChild size='sm'>
-          <a href="" className="text-gray-400 underline hover:text-gray-200">Não possui uma? Crie agora mesmo</a>
+          <a href="" className="text-gray-400 underline hover:text-gray-200 pb-5">Não possui uma? Crie agora mesmo</a>
         </Text>
       </footer>
     </div>
